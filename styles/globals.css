@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+a,
+small,
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAlt {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInAlt {
+  -webkit-animation-name: fadeInAlt;
+  animation-name: fadeInAlt;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.img2 {
+  src: local("D:\PortFolio-main\public\hero2Mobile.webp");
+}
